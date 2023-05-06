@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Noto Sans', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  letter-spacing: -0.5px;
+}
+
+body.light-mode {
+  /* Navbar Variables */
+  --nav-bgcolor: rgb(203, 203, 209);
+  --nav-text-color: black;
+}
+
+/* Navbar styles go here */
+nav {
+  display: flex;
+  background-color: var(--nav-bgcolor);
+  height: 20%;
+  /* justify-content: baseline; */
+  /* align-content: center; */
+}
+
+nav div.nav-links {
+  display: flex;
+  width: 70%;
+  justify-content: flex-end;
+}
+
+nav div.app-name {
+  width: 30%;
+}
+
+nav div.nav-links li {
+  list-style-type: none;
+}
+
+nav div.nav-links li a,
+nav div.app-name a {
+  text-decoration: none;
+  color: var(--nav-text-color);
+}
